@@ -1,0 +1,106 @@
+{
+  "plausibility": {
+    "can_wheel_speed": {
+      "ks": 0.23485406184017638,
+      "p": 3.1763468309047558e-229,
+      "plausible": false
+    },
+    "can_steering_angle": {
+      "ks": 0.20248534464946055,
+      "p": 5.927311418349391e-170,
+      "plausible": false
+    },
+    "can_brake_pressure": {
+      "ks": 0.032830385693505826,
+      "p": 7.525110001886517e-05,
+      "plausible": false
+    },
+    "v2x_road_curvature": {
+      "ks": 0.1372894848984,
+      "p": 5.577210904252576e-78,
+      "plausible": false
+    },
+    "v2x_speed_limit": {
+      "ks": 0.15473741030577082,
+      "p": 4.71226005067164e-99,
+      "plausible": false
+    },
+    "xl_speed_con": {
+      "ks": 0.08356405605776912,
+      "p": 4.321494109492914e-29
+    },
+    "xl_yaw_can_gps": {
+      "ks": 0.05645845185285581,
+      "p": 1.6661364719560564e-13
+    },
+    "xl_yaw_can_imu": {
+      "ks": 0.05185775589630641,
+      "p": 1.8470570097065636e-11
+    },
+    "xl_lataccel": {
+      "ks": 0.19194023344610656,
+      "p": 1.297759728387139e-152
+    },
+    "xl_obstacle": {
+      "ks": 0.16918604651162794,
+      "p": 1.8777340904462039e-118
+    },
+    "xl_curvature_3way": {
+      "ks": 0.18111762900624312,
+      "p": 8.201524376711915e-136
+    }
+  },
+  "false_positives": {
+    "emergency_brake": {
+      "fp": 20,
+      "total": 7500,
+      "rate": 0.0026666666666666666
+    },
+    "sharp_turn": {
+      "fp": 16,
+      "total": 10000,
+      "rate": 0.0016
+    },
+    "high_noise": {
+      "fp": 404,
+      "total": 5000,
+      "rate": 0.0808
+    }
+  },
+  "latency": {
+    "n_detected": 100,
+    "mean_ms": 0.0,
+    "median_ms": 0.0,
+    "p95_ms": 0.0,
+    "within_200ms": 1.0,
+    "within_500ms": 1.0
+  },
+  "unseen_attacks": {
+    "attack_coord_can_imu": {
+      "n": 810,
+      "accuracy": 0.27283950617283953,
+      "coord_detected": 0.27283950617283953,
+      "any_attack_detected": 0.7654320987654321,
+      "missed": 0.2345679012345679
+    },
+    "attack_coord_speed_all": {
+      "n": 948,
+      "accuracy": 0.3407172995780591,
+      "coord_detected": 0.3407172995780591,
+      "any_attack_detected": 0.350210970464135,
+      "missed": 0.6497890295358649
+    }
+  },
+  "intensity_sweep": {
+    "10": 0.01,
+    "30": 0.025,
+    "50": 0.065,
+    "70": 0.825,
+    "90": 0.995,
+    "110": 1.0,
+    "130": 1.0,
+    "150": 1.0,
+    "170": 1.0,
+    "190": 1.0
+  }
+}
